@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
+
+@property(nonatomic, weak) IBOutlet UIToolbar *toolbar;
+@property(nonatomic, weak) IBOutlet UIBarButtonItem *shareButton;
+@property(nonatomic, weak) IBOutlet UITextField *textField;
+
+-(IBAction)shareButtonTapped:(id)sender;
 
 
 @end
