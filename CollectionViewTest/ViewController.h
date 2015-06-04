@@ -16,6 +16,7 @@
 @property(nonatomic, weak) IBOutlet UIToolbar *toolbar;
 @property(nonatomic, weak) IBOutlet UIBarButtonItem *shareButton;
 @property(nonatomic, weak) IBOutlet UITextField *textField;
+@property(nonatomic, weak) IBOutlet UICollectionView *collectionView;
 
 -(IBAction)shareButtonTapped:(id)sender;
 

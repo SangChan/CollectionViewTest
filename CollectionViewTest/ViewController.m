@@ -32,6 +32,8 @@
     [self.textField setBackground:textFieldImage];
     self.searches = [@[] mutableCopy];
     self.searchResults = [@{} mutableCopy];
+    
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"FlickrCell"];
 }
 
 - (void)didReceiveMemoryWarning {
