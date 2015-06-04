@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITextFieldDelegate>
+@interface ViewController : UIViewController <UITextFieldDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
+
+@property(nonatomic, strong) NSMutableDictionary *searchResults;
+@property(nonatomic, strong) NSMutableArray *searches;
 @property(nonatomic, weak) IBOutlet UIToolbar *toolbar;
 @property(nonatomic, weak) IBOutlet UIBarButtonItem *shareButton;
 @property(nonatomic, weak) IBOutlet UITextField *textField;
